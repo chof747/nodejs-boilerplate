@@ -1,6 +1,7 @@
 {
   "development": {
-    "storage": "/var/data/boilerplate.db"
+    "storage": "/var/data/boilerplate.db",
+    "dialect": "sqlite"
   },
   "test": {
   },

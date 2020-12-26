@@ -3,5 +3,15 @@
 		{
 			"path": "."
 		}
-	]
+	],
+	"settings": {
+		"sqltools.connections": [
+			{
+				"previewLimit": 50,
+				"driver": "SQLite",
+				"name": "node-js-boilerplate-dev",
+				"database": "${workspaceFolder:nodejs-boilerplate}/data/boilerplate.db"
+			}
+		]
+	}
 }
