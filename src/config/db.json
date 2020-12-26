@@ -1,0 +1,9 @@
+{
+  "development": {
+    "storage": "/var/data/boilerplate.db"
+  },
+  "test": {
+  },
+  "production": {
+  }
+}
