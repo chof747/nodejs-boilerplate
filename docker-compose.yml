@@ -1,0 +1,35 @@
+version: "3.7"
+
+services:
+  app:
+    container_name: app
+    build:
+      dockerfile: Dockerfile
+      context: .
+    environment:
+      - TZ=${TZ}
+    ports:
+      - ${CONTAINER_PORT}:3000
+    volumes:
+      - .:/usr/src/app
+      - ./environments/.env:/usr/src/app/.env
+      - /usr/src/app/node_modules
+      - ${DATADIR}:/usr/data
+    command:
+      npm run ${START}
+    networks:
+      backend:
+        aliases: 
+          - app
+      frontend:
+        aliases: 
+          - app
+
+
+
+networks:
+  backend:
+    name: backend
+  frontend:
+    name: frontend
+    
