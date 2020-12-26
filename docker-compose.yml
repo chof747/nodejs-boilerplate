@@ -14,7 +14,7 @@ services:
       - .:/usr/src/app
       - ./environments/.env:/usr/src/app/.env
       - /usr/src/app/node_modules
-      - ${DATADIR}:/usr/data
+      - ${DATADIR}:/var/data
     command:
       npm run ${START}
     networks:
