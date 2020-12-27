@@ -24,9 +24,6 @@ services:
       frontend:
         aliases: 
           - app
-
-
-
 networks:
   backend:
     name: backend
