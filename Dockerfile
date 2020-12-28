@@ -10,4 +10,4 @@ RUN npm install
 
 COPY . ./
 
-CMD [ "bash", "-c", "./update-db.sh && npm run start"]
+CMD [ "bash", "-c", "bash ./update-db.sh && npm run start"]
