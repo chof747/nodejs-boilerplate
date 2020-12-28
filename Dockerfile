@@ -9,3 +9,5 @@ COPY ./package.json ./
 RUN npm install
 
 COPY . ./
+
+CMD [ "bash", "-c", "./update-db.sh && npm run start"]

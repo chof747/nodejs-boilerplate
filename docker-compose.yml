@@ -16,7 +16,7 @@ services:
       - /usr/src/app/node_modules
       - ${DATADIR}:/var/data
     command:
-      npm run ${START}
+      bash -c "./update-db.sh && npm run ${START}"
     networks:
       backend:
         aliases: 
